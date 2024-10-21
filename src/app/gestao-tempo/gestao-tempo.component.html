@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Gestão do Tempo</h1>
+  <p>Texto introdutório sobre a Tríade do Tempo...</p>
+  <button (click)="realizarTeste()">Realizar Teste Grátis</button>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/COMO_SER_MAIS_PRODUTIVO_A_TRÍADE_DO_TEMPO_Christian_Barbosa_Resumo_Animado_do_Livro" frameborder="0" allowfullscreen></iframe>
+  <div class="quiz">
+    <h2>Quiz de Avaliação - Tríade do Tempo</h2>
+    <ul>
+      <li *ngFor="let pergunta of perguntas">
+        <p>{{ pergunta.pergunta }}</p>
+        <ul>
+          <li *ngFor="let resposta of pergunta.respostas">
+            <button (click)="selecionarResposta(resposta)">{{ resposta.resposta }}</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p *ngIf="respostaSelecionada">Você selecionou: {{ respostaSelecionada }}</p>
+  </div>
+</div>

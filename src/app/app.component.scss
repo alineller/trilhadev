@@ -1,0 +1,12 @@
+/* app.component.scss */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  app-trilha, app-gestao-tempo, app-comunicacao-violenta, app-gestao-pessoas, app-video, app-downloads, app-prova {
+    margin-bottom: 20px;
+  }
+  
